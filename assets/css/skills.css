@@ -1,5 +1,5 @@
 .skills {
-    display: flex;
+    display: flex;               /* ← ESSENCIAL */
     flex-direction: column;
 }
 
@@ -14,30 +14,39 @@
     list-style: none;
 }
 
-.skills .tools ul li img {
+.skills .tools ul img {
     max-width: 50px;
-    max-height: 50px;
-    margin: 0 .5rem;
+    margin: 0.5rem;
 }
 
 .skills .personal ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
-.skills .personal ul li {
+.skills .personal li {
     margin-left: 2rem;
-    padding: .5rem
+    padding: 0.5rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .skills {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
+  .skills .personal ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* ← duas colunas */
+  gap: 0.5rem 1.5rem;             /* espaçamento entre linhas e colunas */
+  margin: 0;
+  padding: 0;
+
 }
+
+.skills .personal li {
+  padding: 0.5rem 0;
+}
+

@@ -1,28 +1,25 @@
 .experience {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin:5rem;
+  padding: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha discreta entre experiências */
 }
 
-.experience li {
-    margin-bottom: 1rem;
+
+
+.period {
+  display: block;
+  font-weight: 500;
+  margin: 4px 0;
+  color: #e0e0e0;
 }
 
-.experience li .period {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.experience h4 {
+  margin: 0;
+  font-weight: 800;
+  color: #fff;
 }
 
-.experience li .period::before {
-    content: "";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/calendar.svg');
-    margin-right: .5rem;
+.experience p {
+  margin: 0;
+  color: #ddd;
 }

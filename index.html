@@ -1,120 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-Br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Renan J Paula</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
-
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/acordeon.css">
-    <link rel="stylesheet" href="assets/css/languages.css">
-    <link rel="stylesheet" href="assets/css/portfolio.css">
-    <link rel="stylesheet" href="assets/css/experience.css">
-    <link rel="stylesheet" href="assets/css/skills.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Bárbara Nunes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/acordeon.css" />
+  <link rel="stylesheet" href="assets/css/languages.css" />
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+  <link rel="stylesheet" href="assets/css/experience.css  " />
+  <link rel="stylesheet" href="assets/css/skills.css" />
+  <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
-    <main class="main">
-        <header class="header">
-            <img src="assets/img/my-photo.png" alt="Foto de Perfil" class="photo" id="profile.photo">
+  <main class="main">
+    <header class="header">
+      <img class="perfil" src="assets/img/Barbara.jpg" alt="foto de perfil" />
+      <h1 class="title">Olá,<br />eu sou Bárbara Elen</h1>
+      <div class="information">
+        <p class="job">Junior Developer</p>
+        <p class="location">Rio Verde-GO</p>
+        <p class="phone">(64)-992896111</p>
+        <p class="email">barbaranunesprogrammer@outlook.com</p>
+      </div>
+    </header>
 
-            <h1 class="title">
-                Olá, <br>eu sou <span id="profile.name">Carregando...</span>
-            </h1>
+    <!-- Skills -->
+    <section class="acordeon open">
+      <input type="checkbox" id="skills-toggle" class="toggle" checked />
+      <label for="skills-toggle" class="trigger button-p">
+        <h3>Skills</h3>
+      </label>
+      <div class="content">
+        <div class="skills">
+          <section class="tools">
+            <h3>Habilidades Profissionais:</h3>
+            <ul>
+              <li>
+                <img src="./assets/img/icons/linguagens/Html.svg" alt="HTML" alt="">
+                <img src="./assets/img/icons/linguagens/javascript.svg" alt="JavaScript" />
+                <img src="./assets/img/icons/linguagens/Node.svg" alt="Node">
+                <img src="./assets/img/icons/linguagens/GitHub.svg" alt="GitHub">
+                <img src="./assets/img/icons/linguagens/css.svg"  alt="Css">
 
-            <div class="information">
-                <p class="job" id="profile.job">Carregando...</p>
-                <p class="location" id="profile.location">Carregando...</p>
-                <p class="phone">
-                    <a href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
-                </p>
-                <p class="email">
-                    <a href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
-                </p>
+              </li>
+            </ul>
+          </section>
+         <section class="personal">
+  <h3>Habilidades Pessoais:</h3>
+  <ul>
+    <li>Liderança</li>
+    <li>Facilidade de comunicação</li>
+    <li>Trabalho em equipe</li>
+    <li>Responsabilidade pessoal</li>
+    <li>Pensamento lógico</li>
+    <li>Gestão do tempo</li>
+    <li>Proatividade</li>
+    <li>Resiliência</li>
+    <li>Aprendizado contínuo</li>
+    <li>Atenção aos detalhes</li>
+    <li>Organização</li>
+    <li>Escuta ativa</li>
+  </ul>
+</section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Idiomas -->
+    <section class="acordeon">
+      <input type="checkbox" id="languages-toggle" class="toggle" />
+      <label for="languages-toggle" class="trigger button-p">
+        <h3>Idiomas</h3>
+      </label>
+      <div class="content">
+        <ul class="languages">
+          <li>Português</li>
+          <li>Inglês (Básico)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="acordeon">
+      <input type="checkbox" id="portfolio-toggle" class="toggle" />
+      <label for="portfolio-toggle" class="trigger button-p">
+        <h3>Portfolio</h3>
+      </label>
+      <div class="content content-p">
+        <ul class="portfolio">
+          <li>
+            <div class="title">
+              <img src="./assets/img/icons/github.svg" alt="" />
+              <span>Digivice</span>
             </div>
-        </header>
-
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Skills</h2>
-            </button>
-
-            <div class="content">
-                <div class="skills">
-                    <section class="tools">
-                        <h3>Ferramentas:</h3>
-                        <ul id="profile.skills.hardSkills">
-                        </ul>
-                    </section>
-
-                    <section class="personal">
-                        <h3>Pessoal:</h3>
-                        <ul id="profile.skills.softSkills">
-                            <li>Carregando...</li>
-                            <li>Carregando...</li>
-                            <li>Carregando...</li>
-                        </ul>
-                    </section>
-                </div>
+            <a href="https://github.com/barbaranunesprogrammer/Digivice" target="_blank"
+              rel="noopener noreferrer">https://github.com/barbaranunesprogrammer/Digivice</a>
+          </li>
+          <li>
+            <div class="title">
+              <img src="./assets/img/icons/github.svg" alt="" />
+              <span>Pokedex</span>
             </div>
-        </section>
-
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Idiomas</h2>
-            </button>
-
-            <div class="content">
-                <ul class="languages" id="profile.languages">
-                    <li>Carregando...</li>
-                </ul>
+            <a href="https://github.com/barbaranunesprogrammer/Pokedex" target="_blank"
+              rel="noopener noreferrer">https://github.com/barbaranunesprogrammer/Pokedex</a>
+          </li>
+          <li>
+            <div class="title">
+              <img src="./assets/img/icons/github.svg" alt="" />
+              <span>Corrida de Personagens - Mario Kart Estilizado</span>
             </div>
-        </section>
+            <a href="https://github.com/barbaranunesprogrammer/MarioKart-Barbara" target="_blank"
+              rel="noopener noreferrer">https://github.com/barbaranunesprogrammer/MarioKart-Barbara</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Portfólio</h2>
-            </button>
-
-            <div class="content">
-                <ul class="portfolio" id="profile.portfolio">
-                </ul>
-            </div>
-        </section>
-
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Experiência Profissional</h2>
-            </button>
-
-            <div class="content">
-                <ul class="experience" id="profile.professionalExperience">
-                </ul>
-            </div>
-        </section>
-
-        <footer>
+    <!-- Experiência Profissional -->
+    <section class="acordeon">
+      <input type="checkbox" id="experience-toggle" class="toggle" />
+      <label for="experience-toggle" class="trigger button-p">
+        <h3>Experiência Profissional</h3>
+      </label>
+      <div class="content">
+        <div class="experience">
+          <h4>Auxiliar Administrativo</h4>
+          <span class="period">Fev/2023 – Atual</span>
+          <p>Departamento de Faturamento do Hospital Municipal de Rio Verde - GO.</p>
+        </div>
+        <div class="experience">
+          <h4>Assistente de Loja – FOX MOTO PEÇAS, Rio Verde - GO</h4>
+          <span class="period">Agosto de 2019 – Novembro de 2023 (4 anos e 4 meses)</span>
+          <p>Atendimento ao público e trabalho no estoque.</p>
+        </div>
+        <div class="experience">
+          <h4>Assistente Administrativo – JESUS ALVES DE SOUSA EIRELI-ME</h4>
+          <span class="period">Novembro de 2016 – Abril de 2018 (1 ano e 6 meses)</span>
+          <p>Elaboração de planilhas, documentação e cadastro em pregões.</p>
+        </div>
+      </div>
+    </section>
+   <footer>
             <a href="https://www.dio.me/" target="_blank">
                 <img src="assets/img/dio.svg" alt="DIO">
             </a>
         </footer>
-    </main>
-
-    <script src="assets/js/acordeon.js"></script>
-    <script src="assets/js/api.js"></script>
-    <script src="assets/js/main.js"></script>
+</main>
+  <script src="assets/js/acordeon.js"></script>
 </body>
 
 </html>
